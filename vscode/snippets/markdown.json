@@ -7,16 +7,24 @@
 		"description": "赤文字を挿入"
 	},
 
+	"中央揃えで画像を挿入": {
+		"prefix": "ci",
+		"body": [
+			"<div align='center'><img src='$1' width='100%'></div>"
+		],
+		"description": "中央揃えで画像を挿入"
+	},
+
 	"日付を挿入": {
 		"prefix": "date",
 		"body": [
-			"&CURRENT_YEAR年&CURRENT_MONTH月&CURRENT_DAY日($CURRENT_DAY_NAME_SHORT)"
+			"$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日($CURRENT_DAY_NAME_SHORT)"
 		],
 		"description": "日付を挿入"
 	},
 
 	"現在時刻を挿入": {
-		"prefix": "red",
+		"prefix": "time",
 		"body": [
 			"$CURRENT_HOUR時$CURRENT_MINUTE分"
 		],
@@ -24,7 +32,7 @@
 	},
 
 	"折り畳みを挿入": {
-		"prefix": "red",
+		"prefix": "det",
 		"body": [
 			"<details><summary>$1</summary>",
 			"",
@@ -32,13 +40,5 @@
 			"</details>"
 		],
 		"description": "折り畳みを挿入"
-	},
-
-    "中央揃えで画像を挿入": {
-		"prefix": "ci",
-		"body": [
-			"<div align='center'><img src='$1' width='100%'></div>"
-		],
-		"description": "中央揃えで画像を挿入"
 	}
 }
